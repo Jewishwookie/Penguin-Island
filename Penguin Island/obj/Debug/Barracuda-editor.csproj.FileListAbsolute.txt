@@ -1,0 +1,2 @@
+D:\Github\Penguin-Island\Penguin Island\obj\Debug\Barracuda-editor.csprojAssemblyReference.cache
+D:\Github\Penguin-Island\Penguin Island\obj\Debug\Barracuda-editor.csproj.CoreCompileInputs.cache
