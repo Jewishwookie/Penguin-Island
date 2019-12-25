@@ -31,6 +31,25 @@ public class Fish : MonoBehaviour {
 
             //rotate toward the target
             transform.rotation = Quaternion.LookRotation(targetPosition - transform.position, Vector3.up);
+
+            //calculate time to get there
+            float timeToGetThere = Vector3.Distance(transform.position, targetPosition) / randomisedSpeed;
+            nextActionTime = Time.fixedTime + timeToGetThere;
+
+        }
+        else
+        {
+            //make sure fish doesn't swim past the target
+            Vector3 moveVector = randomisedSpeed * transform.forward * Time.fixedDeltaTime;
+            if (moveVector.magnitude <= Vector3.Distance(transform.position, targetPosition))
+            {
+                transform.position += moveVector;
+            }
+            else
+            {
+                transform.position = targetPosition;
+                nextActionTime = Time.fixedTime;
+            }
         }
     }
 }

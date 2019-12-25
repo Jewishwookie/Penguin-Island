@@ -85,6 +85,6 @@ public class PenguinArea : Area {
 
     private void Update()
     {
-        rewardText.text = pAgent.getReward().ToString();
+        rewardText.text = pAgent.GetCumulativeReward().ToString();
     }
 }
