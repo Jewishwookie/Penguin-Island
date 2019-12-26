@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Isle of Peng.unity
+- path: Assets/Scenes/peng1.unity
   isLoaded: 1
   isActive: 1

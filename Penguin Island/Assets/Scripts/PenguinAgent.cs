@@ -25,7 +25,7 @@ public class PenguinAgent : Agent {
         {
             leftOrRight = -1f;
         }
-        else if (vectorAction[2] == 2f)
+        else if (vectorAction[1] == 2f)
         {
             leftOrRight = 1f;
         }
@@ -62,6 +62,25 @@ public class PenguinAgent : Agent {
         string[] detectableObjects = { "baby", "fish", "wall" };
 
         AddVectorObs(rayPerception.Perceive(rayDistance, rayAngles, detectableObjects,0f, 0f));
+    }
+
+    public override float[] Heuristic()
+    {
+        float[] playerInput = { 0f, 0f };
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            playerInput[0] = 1;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            playerInput[1] = 1;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            playerInput[1] = 2;
+        }
+        return playerInput;
     }
 
     private void Start()
