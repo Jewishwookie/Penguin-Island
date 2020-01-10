@@ -405,7 +405,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 4993346649189864}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4288901555747724
 Transform:
@@ -479,7 +479,7 @@ Transform:
   - {fileID: 4288901555747724}
   - {fileID: 4653560128738468}
   m_Father: {fileID: 4993346649189864}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4561216825020814
 Transform:
@@ -519,7 +519,7 @@ Transform:
   m_Children:
   - {fileID: 4017301515177270}
   m_Father: {fileID: 4993346649189864}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4933387035220554
 Transform:
@@ -541,15 +541,15 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1610103451724758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 78.86, y: 70.265205, z: -55.049496}
+  m_LocalPosition: {x: 78.86, y: 70.265205, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4132098775334338}
   - {fileID: 4933387035220554}
+  - {fileID: 4680588337502648}
   - {fileID: 4520394660393574}
   - {fileID: 4226003653016454}
   - {fileID: 224396609565753158}
-  - {fileID: 4680588337502648}
   - {fileID: 4506971271254996}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1083,6 +1083,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pAgent: {fileID: 114065908460699238}
+  pAgent2: {fileID: 0}
+  pengs:
+  - {fileID: 114065908460699238}
+  - {fileID: 0}
+  - {fileID: 0}
   pBaby: {fileID: 1620556091353122}
   fPrefab: {fileID: 114629881361198414, guid: ca28ccef308fc164bbbed9af02fbbd4d, type: 2}
   rewardText: {fileID: 114958062309310816}
@@ -1105,7 +1110,7 @@ MonoBehaviour:
     vectorActionSize: 0200000003000000
     vectorActionDescriptions: []
     vectorActionSpaceType: 0
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 11400000, guid: f0c53b55cb1914d4ba902590dee364bf, type: 3}
   m_InferenceDevice: 0
   m_UseHeuristic: 0
   m_BehaviorName: PenguinLearning
@@ -1366,10 +1371,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4993346649189864}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 27.857002, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.7799416, y: 1.4800034}
+  m_AnchoredPosition: {x: 4.7799416, y: 8.34}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}

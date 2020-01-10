@@ -451,6 +451,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 862038167}
   m_Script: {fileID: 11500000, guid: d208b5e0ac8884e4d826541b5faa96db, type: 3}
+--- !u!1 &865477240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1620556091353122, guid: 30814ba83e7334f45a48a13d0f053771,
+    type: 2}
+  m_PrefabInternal: {fileID: 1397317802}
 --- !u!1001 &1397317802
 Prefab:
   m_ObjectHideFlags: 0
@@ -458,6 +463,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114243783200192468, guid: 30814ba83e7334f45a48a13d0f053771,
+        type: 2}
+      propertyPath: pengs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114243783200192468, guid: 30814ba83e7334f45a48a13d0f053771,
+        type: 2}
+      propertyPath: babyPengs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4993346649189864, guid: 30814ba83e7334f45a48a13d0f053771, type: 2}
       propertyPath: m_LocalPosition.x
       value: 78.86
@@ -505,21 +520,36 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114243783200192468, guid: 30814ba83e7334f45a48a13d0f053771,
+        type: 2}
+      propertyPath: pengs.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114243783200192468, guid: 30814ba83e7334f45a48a13d0f053771,
+        type: 2}
+      propertyPath: pengs.Array.data[2]
+      value: 
+      objectReference: {fileID: 2076155242}
+    - target: {fileID: 114599963897021826, guid: 30814ba83e7334f45a48a13d0f053771,
+        type: 2}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114243783200192468, guid: 30814ba83e7334f45a48a13d0f053771,
+        type: 2}
+      propertyPath: babyPengs.Array.data[0]
+      value: 
+      objectReference: {fileID: 865477240}
+    - target: {fileID: 114243783200192468, guid: 30814ba83e7334f45a48a13d0f053771,
+        type: 2}
+      propertyPath: babyPengs.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 114599963897021826, guid: 30814ba83e7334f45a48a13d0f053771,
         type: 2}
       propertyPath: m_UseHeuristic
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1610103451724758, guid: 30814ba83e7334f45a48a13d0f053771, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114599963897021826, guid: 30814ba83e7334f45a48a13d0f053771,
-        type: 2}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 11400000, guid: f0c53b55cb1914d4ba902590dee364bf,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30814ba83e7334f45a48a13d0f053771, type: 2}
   m_IsPrefabAsset: 0
@@ -751,6 +781,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2076155242 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114065908460699238, guid: 30814ba83e7334f45a48a13d0f053771,
+    type: 2}
+  m_PrefabInternal: {fileID: 1397317802}
+  m_Script: {fileID: 11500000, guid: d208b5e0ac8884e4d826541b5faa96db, type: 3}
 --- !u!1001 &2109215580
 Prefab:
   m_ObjectHideFlags: 0
@@ -913,6 +949,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pAgent: {fileID: 862038168}
+  pAgent2: {fileID: 0}
+  pengs: []
   pBaby: {fileID: 1535353836}
   fPrefab: {fileID: 114629881361198414, guid: ca28ccef308fc164bbbed9af02fbbd4d, type: 2}
   rewardText: {fileID: 618115808}
